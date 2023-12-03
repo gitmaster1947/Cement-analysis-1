@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compressive Strength Prediction</title>
+</head>
+<body>
+    <h1>Compressive Strength Prediction</h1>
+    
+    <form action="/predict" method="post">
+        <label for="material_quantity">Material Quantity (gm):</label>
+        <input type="text" name="material_quantity" required><br>
+
+        <label for="additive_catalyst">Additive Catalyst (gm):</label>
+        <input type="text" name="additive_catalyst" required><br>
+
+        <label for="ash_component">Ash Component (gm):</label>
+        <input type="text" name="ash_component" required><br>
+
+        <label for="water_mix">Water Mix (ml):</label>
+        <input type="text" name="water_mix" required><br>
+
+        <label for="plasticizer">Plasticizer (gm):</label>
+        <input type="text" name="plasticizer" required><br>
+
+        <label for="moderate_aggregator">Moderate Aggregator:</label>
+        <input type="text" name="moderate_aggregator" required><br>
+
+        <label for="refined_aggregator">Refined Aggregator:</label>
+        <input type="text" name="refined_aggregator" required><br>
+
+        <label for="formulation_duration">Formulation Duration (hrs):</label>
+        <input type="text" name="formulation_duration" required><br>
+
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
